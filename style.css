@@ -8,13 +8,16 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    
 }
 
+
 header {
-    background-color: #7F7FD5;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
     display: flex;
     justify-content: end;
     align-items: center;
+    height: 10vh;
 }
 
 .zone {
@@ -26,6 +29,7 @@ header {
     border-radius: 50px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    
 }
 
 .zone:hover {
@@ -42,7 +46,7 @@ header {
 
 .nav_links li{
     display: inline-block;
-    padding: 0.7rem;
+    padding: 1rem;
     list-style: none;
 }
 
@@ -50,29 +54,32 @@ header {
     text-decoration: none;
     color:beige;
     font-family: 'Lato';
+    font-size: 1.5rem;
 }
 
 .nav_links a:hover {
     color: rgb(209, 203, 203);
+    transition: all 0.4s
 }
 
 .ctn {
-    padding: 0.2em 0.7em;
+    padding: 0.5rem 1rem;
     border: 1px solid beige;
     background-color: transparent;
     border-radius: 10px;
     color: beige;
-    margin-right: 13px;
+    margin-right: 1.2rem;
     margin-left: 10px;
-    font-family: 'Lato';
 }
 
 .ctn:hover {
     border: 1px solid rgb(209, 203, 203);
+    color: rgb(209, 203, 203);
+    transition: all 0.4s
 }
 
 .ctn, li {
-    font-size: 100%;
+    font-size: 1.2rem;
 }
 
 .logo {
@@ -85,18 +92,51 @@ header {
 
 /**********COVER**********/
 .cover { 
-    background-color: red;
-    height: 75vh;
-    padding: 2rem 5rem 10rem 5rem;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    height: 70vh;
+    padding-top: 14rem;
+    transition: all .2s ease-in-out;
+}
+
+.cover:hover {
+    box-shadow: 10px 5px 5px rgb(138, 133, 133);
+    /* transform: scale(1.1); */
 }
 
 .cover h5, h1 {
     text-align: center;
-    padding-top: 4rem;
     color: beige;
-    font-size: 1rem;
-}
+    font-size: 1.8rem;
+} 
 
+h5 {
+    border-right: solid 3px beige;
+    white-space: nowrap;
+    overflow: hidden;    
+    font-family: monospace;  
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Animation */
+  h5 {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: beige;}
+    to{border-right-color: transparent;}
+  }
 
 .git {
     display: block;
@@ -106,11 +146,12 @@ header {
     background-color: transparent;
     color: beige;
     border-radius: 10px;
-    transition-delay: 90ms;
+    transition: all 0.4s
 }
 
 .git:hover {
     border: 0.5px solid rgb(209, 203, 203);
+    background-color: #b06ab3;
 }
 
 
