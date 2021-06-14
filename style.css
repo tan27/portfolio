@@ -1,0 +1,230 @@
+/* NAV */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #2e34e2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.zone {
+    width: 700px;
+    height: 700px;
+    padding: 5rem;
+    margin: auto;
+    background-color:bisque;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.zone:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+
+}
+
+/**********NAVBAR**********/
+
+.nav_links {
+    margin: 0 ;
+    padding: 0;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0.7rem;
+    list-style: none;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color:beige;
+    font-family: 'Lato';
+}
+
+.nav_links a:hover {
+    color: rgb(209, 203, 203);
+}
+
+.ctn {
+    padding: 0.2em 0.7em;
+    border: 1px solid beige;
+    background-color: transparent;
+    border-radius: 10px;
+    color: beige;
+    margin-right: 13px;
+    margin-left: 10px;
+    font-family: 'Lato';
+}
+
+.ctn:hover {
+    border: 1px solid rgb(209, 203, 203);
+}
+
+.ctn, li {
+    font-size: 100%;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    width: 5em;
+
+}
+
+
+/**********COVER**********/
+.cover { 
+    background-image: linear-gradient(180deg, rgba(46,52,226,1) 25%, rgba(93,103,231,1) 78%, rgba(105,104,205,1) 96%);
+    height: 75vh;
+    padding: 2rem 5rem 10rem 5rem;
+}
+
+.cover h5, h1 {
+    text-align: center;
+    padding-top: 4rem;
+    color: beige;
+    font-size: 1rem;
+}
+
+
+.git {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+    border: 2px solid beige;
+    background-color: transparent;
+    color: beige;
+    border-radius: 10px;
+    transition-delay: 90ms;
+}
+
+.git:hover {
+    border: 0.5px solid rgb(209, 203, 203);
+}
+
+
+
+
+/**********PROJECTS**********/
+.carousel {
+    width: 65%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+.carousel button {
+    width: 30%;
+}
+
+@media all and (max-width: 1400px) {
+
+    .cover {
+        height: 100%;
+    }
+
+    .carousel {
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+
+/**********ABOUT ME**********/
+
+.about {
+    padding: 3rem;
+    font-size: 1rem;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    color: #2e34e2;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2::after {
+    content: "..";
+    color: #2e34e2;
+    display: block;
+}
+
+.about .photo {
+    display: block;
+    margin: 0 auto;
+    width: 13rem;
+    border-radius: 100px;
+    height: auto;
+
+    animation: cd-bounce-1 .6s;
+    animation-duration: 0.6s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: cd-bounce-1
+}
+
+
+
+/**********SKILLS**********/
+
+.skills {
+    height: 25em;
+    /* display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1fr; */
+}
+
+.skills h2 {
+    text-align: center;
+    color: #2e34e2;
+    padding: 3rem;
+
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.skills li {
+    background-color: rgb(233, 225, 225);
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    margin: 1rem;
+
+
+}
+
+
+/**********FOOTER**********/
+
+footer {
+    background-color: black;
+    color: beige;
+}
