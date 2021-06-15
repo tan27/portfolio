@@ -9,16 +9,34 @@
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
+/* body {
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+    height: 100%;
+    background-size: cover;
+    background-repeat: none;
+} */
+
 .zone {
     transition: all .5s ease-in-out;
     width: 50%;
     border-radius: 10rem;
-    background-color: snow;
+    background-color: rgba(255,250,250, 0.5);
+    margin-top: 5rem;
 }
 
 .zone:hover {
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
     transform: scale(1.05);
+}
+
+@media screen and (max-width: 700px) {
+    .zone {
+        width: auto;
+    }
+
+    .zone:hover{
+        box-shadow: none;
+    }
 }
 
 /**********NAVBAR**********/
@@ -54,7 +72,7 @@ header {
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 102%;
-    transition: background-position 275ms ease;
+    transition: background-position 300ms ease;
     padding: 0.5em;
 }
 
@@ -103,6 +121,7 @@ header {
 .cover h1 {
     font-size: 7em;
     transition: all .3s ease-in-out;
+    padding: 3rem;
 } 
 
 .cover h1:hover {
@@ -239,7 +258,7 @@ header {
 p {
     text-align: center;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 3rem;
     padding-bottom: 3em;
 }
 
@@ -263,6 +282,7 @@ h2::after {
     border-radius: 200px;
     width: 40rem;
     box-shadow: -5px 5px 5px 5px #4568dc;
+    padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 1700px) {
@@ -301,6 +321,7 @@ h2::after {
     list-style: none;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .skills i {
