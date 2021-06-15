@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,39 +9,27 @@
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
-h2 {
-    color: #2e34e2;
-    font-weight: bold;
-    text-align: center;
-    font-size: 4rem;
+.zone {
+    transition: all .5s ease-in-out;
 }
+
+.zone:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    transform: scale(1.05);
+}
+
+/**********NAVBAR**********/
 
 header {
     background: linear-gradient(to right, #4568dc, #b06ab3);
     display: flex;
     justify-content: end;
     align-items: center;
-    padding-top: 1rem;
+    padding: 2rem;
 }
-
-.zone {
-    /* background-color:bisque; */
-    border-radius: 50px;
-    transition: all .5s ease-in-out;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.zone:hover {
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-    transform: scale(1.05);
-
-}
-
-/**********NAVBAR**********/
 
 .nav_links {
-    margin: 0 ;
+    margin: 0;
     padding: 0;
 }
 
@@ -55,28 +42,28 @@ header {
 .nav_links li a, .ctn {
     text-decoration: none;
     font-family: monospace, 'Lato';
-    font-size: 1.7rem;
-    font-family: monospace;
+    font-size: 3.5em;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to left, midnightblue, midnightblue 50%, bisque 50%);
+    background: linear-gradient(to left, bisque, bisque 50%, midnightblue 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 102%;
     transition: background-position 275ms ease;
+    padding: 0.5em;
 }
 
 
 .nav_links a:hover, .ctn:hover {
     background-position: 0 100%;
-    border-color: bisque;
+    border-color: midnightblue;
 }
 
 .ctn {
-    padding: 0.1rem 0.7rem;
-    border: 1px solid midnightblue;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid bisque;
     background-color: transparent;
     border-radius: 10px;
     margin-right: 1.2rem;
@@ -94,19 +81,19 @@ header {
 /**********COVER**********/
 .cover { 
     background: linear-gradient(to right, #4568dc, #b06ab3);
-    height: 70vh;
+    height: 65vh;
+    width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
-    padding-top: 15rem;
+    padding-top: 27rem;
+    padding-bottom: 2rem;
     color: bisque;
-    padding-bottom: 3rem;
 }
 
 .cover h1 {
-    font-size: 3rem;
-    transition: all .2s ease-in-out;
+    font-size: 7em;
+    transition: all .3s ease-in-out;
 } 
 
 .cover h1:hover {
@@ -120,7 +107,36 @@ header {
     font-family: monospace;  
     margin: 0 auto;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 4em;
+  }
+
+  @media screen and (max-width: 1700px) {
+
+    .cover {
+        padding-top: 3rem;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    .cover h1 {
+          font-size: 3rem;
+      }
+    .cover h5 {
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          animation:none;
+      }
+    .git a {
+          font-size: 0.3rem;
+          margin: 0;
+      }
+
+    .photo {
+          display: none;
+      }
   }
   
   /* Animation */
@@ -133,7 +149,7 @@ header {
   
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 472px;}
+    to{width: 800px;}
   }
   
   /* cursor animations */
@@ -154,7 +170,8 @@ header {
     transition: all 0.4s;
     font-family: monospace;
     position: relative;
-    font-size: 1.4rem;
+    font-size: 3em;
+    margin-top: 2rem;
 }
 
 .git::before {
@@ -178,8 +195,6 @@ header {
     width: 100%;
     background-color: #b06ab3;
 }
-
-
 
 
 /**********PROJECTS**********/
@@ -212,19 +227,24 @@ header {
 
 
 /**********ABOUT ME**********/
+.about {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 p {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 3rem;
     padding: 1rem;
+    padding-bottom: 3em;
 }
 
 .about h2 {
     color: #2e34e2;
     font-weight: bold;
     text-align: center;
-    font-size: 2.7rem;
-    padding-top: 1.5rem;
+    font-size: 5rem;
+    padding-top: 3em;
 }
 
 h2::after {
@@ -234,14 +254,11 @@ h2::after {
 }
 
 .about .photo {
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
     display: block;
     margin: auto;
     border-radius: 120px;
-    width: 15rem;
-    box-shadow: 0px 0px 5px 5px #4568dc;
+    width: 25rem;
+    box-shadow: -5px 5px 5px 5px #4568dc;
 }
 
 
@@ -249,18 +266,25 @@ h2::after {
 /**********SKILLS**********/
 
 .skills {
-    height: 25em;
+    /* height: 25rem; */
     /* display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1fr; */
+    padding-bottom: 7em;
 }
 
 .skills h2 {
     color: #2e34e2;
     font-weight: bold;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 5rem;
+    padding-top: 3em;
+}
 
+h2::after {
+    content: "..";
+    color: #2e34e2;
+    display: block;
 }
 
 .skills ul {
@@ -268,18 +292,21 @@ h2::after {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
+    align-items: center;
 }
 
-.skills li {
-    background-color: rgb(233, 225, 225);
-    border-radius: 10px;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    margin: 1rem;
-
-
+.skills i {
+    font-size: 15em;
+    padding: 2.5rem;
 }
 
+i {
+    transition: all 0.2s ease-in-out;
+}
+
+i:hover {
+    transform: scale(1.1);
+}
 
 /**********FOOTER**********/
 
