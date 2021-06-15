@@ -11,6 +11,9 @@
 
 .zone {
     transition: all .5s ease-in-out;
+    width: 50%;
+    border-radius: 10rem;
+    background-color: snow;
 }
 
 .zone:hover {
@@ -78,6 +81,12 @@ header {
 
 }
 
+@media screen and (max-width: 1700px) {
+    .nav_links, .ctn {
+        display: none;
+    }
+}
+
 /**********COVER**********/
 .cover { 
     background: linear-gradient(to right, #4568dc, #b06ab3);
@@ -108,35 +117,6 @@ header {
     margin: 0 auto;
     padding: 1rem;
     font-size: 4em;
-  }
-
-  @media screen and (max-width: 1700px) {
-
-    .cover {
-        padding-top: 3rem;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-      }
-    .cover h1 {
-          font-size: 3rem;
-      }
-    .cover h5 {
-          font-size: 1.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-wrap: wrap;
-          animation:none;
-      }
-    .git a {
-          font-size: 0.3rem;
-          margin: 0;
-      }
-
-    .photo {
-          display: none;
-      }
   }
   
   /* Animation */
@@ -194,6 +174,30 @@ header {
     /* border: 0.5px solid rgb(209, 203, 203); */
     width: 100%;
     background-color: #b06ab3;
+}
+
+@media screen and (max-width: 1700px) {
+
+    .cover {
+        padding-top: 3rem;
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    .cover h1 {
+          font-size: 3rem;
+      }
+    .cover h5 {
+          font-size: 1.2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation:none;
+          flex-wrap: wrap;
+      }
+    .git {
+          font-size: 1.5rem;
+      }
 }
 
 
@@ -256,9 +260,15 @@ h2::after {
 .about .photo {
     display: block;
     margin: auto;
-    border-radius: 120px;
-    width: 25rem;
+    border-radius: 200px;
+    width: 40rem;
     box-shadow: -5px 5px 5px 5px #4568dc;
+}
+
+@media screen and (max-width: 1700px) {
+    .about .photo {
+        width: 15rem;
+    }
 }
 
 
@@ -266,11 +276,9 @@ h2::after {
 /**********SKILLS**********/
 
 .skills {
-    /* height: 25rem; */
-    /* display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1fr; */
     padding-bottom: 7em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .skills h2 {
@@ -298,14 +306,6 @@ h2::after {
 .skills i {
     font-size: 15em;
     padding: 2.5rem;
-}
-
-i {
-    transition: all 0.2s ease-in-out;
-}
-
-i:hover {
-    transform: scale(1.1);
 }
 
 /**********FOOTER**********/
