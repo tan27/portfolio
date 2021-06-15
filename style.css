@@ -8,29 +8,29 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-    
 }
 
+h2 {
+    color: #2e34e2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+}
 
 header {
     background: linear-gradient(to right, #4568dc, #b06ab3);
     display: flex;
     justify-content: end;
     align-items: center;
-    height: 10vh;
+    padding-top: 1rem;
 }
 
 .zone {
-    width: 700px;
-    height: 700px;
-    padding: 5rem;
-    margin: auto;
-    background-color:bisque;
+    /* background-color:bisque; */
     border-radius: 50px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    transition: all .5s ease-in-out
-    
+    transition: all .5s ease-in-out;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .zone:hover {
@@ -55,23 +55,23 @@ header {
 .nav_links li a, .ctn {
     text-decoration: none;
     font-family: monospace, 'Lato';
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: monospace;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to left, midnightblue, midnightblue 50%, beige 50%);
+    background: linear-gradient(to left, midnightblue, midnightblue 50%, bisque 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
-    background-position: 100%;
+    background-position: 102%;
     transition: background-position 275ms ease;
 }
 
 
 .nav_links a:hover, .ctn:hover {
     background-position: 0 100%;
-    border-color: beige;
+    border-color: bisque;
 }
 
 .ctn {
@@ -95,13 +95,17 @@ header {
 .cover { 
     background: linear-gradient(to right, #4568dc, #b06ab3);
     height: 70vh;
-    padding-top: 14rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 15rem;
+    color: bisque;
+    padding-bottom: 3rem;
 }
 
-.cover h5, h1 {
-    text-align: center;
-    color: beige;
-    font-size: 1.8rem;
+.cover h1 {
+    font-size: 3rem;
     transition: all .2s ease-in-out;
 } 
 
@@ -109,13 +113,14 @@ header {
     transform: scale(1.02);
 }
 
-h5 {
-    border-right: solid 3px beige;
+.cover h5 {
+    border-right: solid 3px bisque;
     white-space: nowrap;
     overflow: hidden;    
     font-family: monospace;  
     margin: 0 auto;
     padding: 1rem;
+    font-size: 2rem;
   }
   
   /* Animation */
@@ -134,7 +139,7 @@ h5 {
   /* cursor animations */
   
   @keyframes animated-cursor{
-    from{border-right-color: beige;}
+    from{border-right-color: bisque;}
     to{border-right-color: transparent;}
   }
 
@@ -149,7 +154,7 @@ h5 {
     transition: all 0.4s;
     font-family: monospace;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .git::before {
@@ -208,19 +213,18 @@ h5 {
 
 /**********ABOUT ME**********/
 
-.about {
-    padding: 3rem;
-    font-size: 1rem;
-}
-
 p {
     text-align: center;
+    font-size: 1.7rem;
+    padding: 1rem;
 }
 
-h2 {
+.about h2 {
     color: #2e34e2;
     font-weight: bold;
     text-align: center;
+    font-size: 2.7rem;
+    padding-top: 1.5rem;
 }
 
 h2::after {
@@ -230,21 +234,14 @@ h2::after {
 }
 
 .about .photo {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
     display: block;
-    margin: 0 auto;
-    width: 13rem;
-    border-radius: 100px;
-    height: auto;
-
-    animation: cd-bounce-1 .6s;
-    animation-duration: 0.6s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: cd-bounce-1
+    margin: auto;
+    border-radius: 120px;
+    width: 15rem;
+    box-shadow: 0px 0px 5px 5px #4568dc;
 }
 
 
@@ -259,9 +256,10 @@ h2::after {
 }
 
 .skills h2 {
-    text-align: center;
     color: #2e34e2;
-    padding: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5rem;
 
 }
 
@@ -287,5 +285,5 @@ h2::after {
 
 footer {
     background-color: black;
-    color: beige;
+    color: bisque;
 }
