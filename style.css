@@ -116,10 +116,13 @@ header {
     .hamburger {
         display: block;
         color: bisque;
+
+        position: fixed;
+        z-index: 100;
     }
 
     .nav-links {
-        position: fixed;
+        position: absolute;
         left: -100%;
         top: 0rem;
         flex-direction: row;
@@ -129,7 +132,7 @@ header {
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        background: linear-gradient(to right, #4568dc, #b06ab3);
+        /* background: linear-gradient(to right, #4568dc, #b06ab3); */
         overflow: hidden;
     }
 
@@ -139,8 +142,8 @@ header {
         position: absolute;
         font-size: 0.5rem;
         padding: 1rem;
-        border: bisque;
         overflow: hidden;
+        background-color: #b06ab3;
     }
 
     .fa-times{

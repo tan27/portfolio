@@ -2,7 +2,7 @@ var sticky = document.getElementById("sticky");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-links");
-// const bars = document.querySelector(".fa-bars");
+const bars = document.querySelector(".fa-bars");
 
 window.onscroll = function() {scrollFunction()};
 sticky.addEventListener('click', topFunction)
@@ -27,6 +27,12 @@ function topFunction() {
 
 function mobileMenu() {
     navMenu.classList.toggle("active");
+    bars.classList.toggle('fa-bars');
+}
+
+function hamFunction() {
+  bars.classList.toggle('fa-times');
+
 }
 
 function closeMenu() {
