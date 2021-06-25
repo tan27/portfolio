@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
 h2 {
@@ -32,11 +33,6 @@ h2::after {
     list-style: none;
 }
 
-.zone:hover {
-    /* box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2); */
-    /* transform: scale(1.05); */
-}
-
 @media screen and (max-width: 700px) {
     .zone {
         width: auto;
@@ -54,7 +50,9 @@ header {
     display: flex;
     justify-content: end;
     align-items: center;
-    padding: 2rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
 .nav-links {
@@ -65,34 +63,32 @@ header {
 
 .nav-links li  {
     display: inline-block;
-    padding: 3rem;
+    padding: 2rem;
     list-style: none;
 }
 
 .nav_links li a, .ctn {
     text-decoration: none;
-    font-family: monospace, 'Lato';
-    font-size: 3.5em;
-    /* position: relative; */
-    /* overflow: hidden; */
-    background: linear-gradient(to left, bisque, bisque 50%, midnightblue 50%);
+    font-family: 'Monserrat', 'Lato';
+    font-size: 3em;
+    background: linear-gradient(to left, snow, snow 50%, midnightblue 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
-    background-position: 102%;
+    background-position: 99%;
     transition: background-position 300ms ease;
 }
 
-.ctn {
+/* .ctn {
     padding: 0.3rem 1.5rem;
     border: 1px solid bisque;
     background-color: transparent;
     border-radius: 10px;
     margin-right: 1.3rem;
-    margin-left: 10px;
+    margin-left: 25px;
 
-}
+} */
 
 .nav_links a:hover, .ctn:hover {
     background-position: 0 100%;
@@ -108,17 +104,18 @@ header {
 
 .hamburger {
     display: none;
-    color: white;
+    color: snow;
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1700px) {
     .hamburger {
         display: block;
-        color: bisque;
-
+        color: snow;
         position: fixed;
         z-index: 100;
+        right: 3rem;
+        top: 1rem
     }
 
     .nav-links {
@@ -147,25 +144,36 @@ header {
     }
 
     .fa-times{
-        color: bisque;
+        color: snow;
     }
 }
 
 /**********COVER**********/
+#name{
+    color:rgb(38, 38, 240);
+    font-weight:bolder;
+}
 .cover { 
-    background: linear-gradient(to right, #4568dc, #b06ab3);
-    height: 65vh;
+    background: linear-gradient(to right, #4568dc, #908291);
+    /* background-color: #252934; */
+    height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 27rem;
-    padding-bottom: 2rem;
-    color: bisque;
+    padding-top: 35rem;
+    color: snow;
+    overflow: hidden;
 }
 
+/* rgba(0, 0, 0, 0.5)
+#252934
+#616161
+#333
+#FF3F8E", "#04C2C9", "#2E55C1 */
+
 .cover h1 {
-    font-size: 7em;
+    font-size: 8em;
     transition: all .3s ease-in-out;
     padding: 3rem;
 } 
@@ -175,16 +183,15 @@ header {
 }
 
 .cover h5 {
-    border-right: solid 3px bisque;
+    border-right: solid 3px snow;
     white-space: nowrap;
-    overflow: hidden;    
-    font-family: monospace;  
+    overflow: hidden;     
     margin: 0 auto;
     padding: 1rem;
     font-size: 4em;
   }
   
-  /* Animation */
+  /* animation */
   h5 {
     animation: animated-text 4s steps(29,end) 1s 1 normal both,
                animated-cursor 600ms steps(29,end) infinite;
@@ -200,22 +207,22 @@ header {
   /* cursor animations */
   
   @keyframes animated-cursor{
-    from{border-right-color: bisque;}
+    from{border-right-color: snow;}
     to{border-right-color: transparent;}
   }
 
 .git {
     display: block;
     margin: 0 auto;
-    padding: 0.3em 0.8em;
-    border: 2px solid beige;
+    padding: 0.5em 1em;
+    border: 8px solid snow;
     background-color: transparent;
-    color: beige;
+    color: snow;
     border-radius: 10px;
-    transition: all 0.4s;
-    font-family: monospace;
+    transition: all 0.1s;
     position: relative;
-    font-size: 3em;
+    font-size: 3.5em;
+    font-weight: 500;
     margin-top: 2rem;
 }
 
@@ -236,9 +243,8 @@ header {
 }
 
 .git:hover::before {
-    /* border: 0.5px solid rgb(209, 203, 203); */
     width: 100%;
-    background-color: #b06ab3;
+    background-color: midnightblue;
 }
 
 @media screen and (max-width: 1700px) {
