@@ -10,7 +10,6 @@
 }
 
 h2 {
-    color: #2e34e2;
     text-align: center;
     padding-top: 1.5em;
 
@@ -46,7 +45,8 @@ h2::after {
 /**********NAVBAR**********/
 
 header {
-    background: linear-gradient(to right, #4568dc, #b06ab3);
+    /* background: linear-gradient(to right, #4568dc, #b06ab3); */
+    background-color: rgba(0, 0, 0, 0.733);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -71,7 +71,7 @@ header {
     text-decoration: none;
     font-family: 'Monserrat', 'Lato';
     font-size: 3em;
-    background: linear-gradient(to left, snow, snow 50%, midnightblue 50%);
+    background: linear-gradient(to left, rgb(241, 154, 40) 50%, mintcream 50%, rgb(255, 21, 21) 20%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -92,7 +92,6 @@ header {
 
 .nav_links a:hover, .ctn:hover {
     background-position: 0 100%;
-    border-color: midnightblue;
 }
 
 .logo {
@@ -150,18 +149,22 @@ header {
 
 /**********COVER**********/
 #name{
-    color:rgb(38, 38, 240);
-    font-weight:bolder;
+    /* color:rgb(38, 38, 240); */
+    color: rgb(255, 21, 21);
+    font-weight:900;
+    text-emphasis: bold;
 }
 .cover { 
-    background: linear-gradient(to right, #4568dc, #908291);
+    /* background: linear-gradient(to right, #4568dc, #908291); */
     /* background-color: #252934; */
-    height: 100vh;
+    background-color: rgb(148, 180, 165);
+    height: 95vh;
     width: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 35rem;
+    padding-top: 50em;
+    padding-bottom: 5em;
     color: snow;
     overflow: hidden;
 }
@@ -244,7 +247,7 @@ header {
 
 .git:hover::before {
     width: 100%;
-    background-color: midnightblue;
+    background-color: rgb(255, 21, 21);
 }
 
 @media screen and (max-width: 1700px) {
@@ -317,13 +320,13 @@ header {
 /**********ABOUT ME**********/
 
 .about h2 {
-    font-size: 6.5em;
+    font-size: 5em;
 }
 
-p {
+.about p {
     text-align: center;
-    font-size: 3rem;
-    padding: 3rem;
+    font-size: 4rem;
+    padding-top: 3rem;
     padding-bottom: 3em;
 }
 
@@ -332,7 +335,7 @@ p {
     margin: auto;
     border-radius: 200px;
     width: 40rem;
-    box-shadow: -5px 5px 5px 5px #4568dc;
+    box-shadow: -5px 5px 5px 9px rgb(148, 180, 165);
     padding-bottom: 2rem;
 }
 
@@ -375,8 +378,9 @@ p {
 /**********FOOTER**********/
 
 footer {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.733);
     color: bisque;
+    height: 15vh;
 }
 
 /**********BACK TO TOP**********/
