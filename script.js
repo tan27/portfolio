@@ -7,7 +7,7 @@ var nav = document.getElementById("navi");
 
 // window.onscroll = function() {scrollFunction()};
 window.onscroll = function() {scrolling()};
-sticky.addEventListener('click', topFunction)
+// sticky.addEventListener('click', topFunction)
 
 // hamburger.addEventListener("click", mobileMenu);
 // navLinks.forEach(n => n.addEventListener("click", closeMenu));
@@ -29,10 +29,10 @@ function scrolling() {
 //   }
 // }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0; 
-}
+// function topFunction() {
+//   document.body.scrollTop = 0;
+//   document.documentElement.scrollTop = 0; 
+// }
 
 // function mobileMenu() {
 //     nav = navMenu.classList.toggle("active");
