@@ -7,97 +7,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="https://unpkg.com/pattern.css" rel="stylesheet">
-
     <title>Tammy Nguyen</title>
   </head>
 
+  <body>
+    <header></header>
 
-<body>
-
-<header>
     <nav id="navi">
       <img class="logo" src="./profile2.png" alt="">
         <ul class="nav-links navbar-links">
-            
-            <li><a href="">Projects</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="" alt="LinkedIn"><i class="devicon-linkedin-plain"></i></a></li>
+            <li><a href="" alt="GitHub"><i class="devicon-github-original"></i></a></li>
+            <li><a href="mailto:john@example.com" alt="Email"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#blog" alt="Medium"><i class="fab fa-medium"></i></a></li>
+        </ul>
+    </nav>
+    
+    <!-- <aside>
             <li><a href=""><i class="devicon-linkedin-plain"></i></a></li>
             <li><a href=""><i class="devicon-github-original contactgit"></i></a></li>
             <li><a href="mailto:john@example.com"><i class="fa fa-envelope"></i></a></li>
             <li><a href=""><i class="fab fa-medium"></i></a></li>
-        </ul>
-        <!-- <a href="" class="hamburger"><i class="fa fa-bars"></i></a> -->
-    </nav>
-</header>
+    </aside> -->
 
-  <div class="cover">
-    <h5> Plan. Build. Optimize. </h5>
-    <h1>Hello, I'm <strong id="name">Tammy Nguyen.</strong> <br> I am a full-stack developer and designer. </h1> <br>
-    <button class="git"> <a href="#"></a> Learn More</button>
-  </div>
+    <section class="cover">
+      <h5> Plan. Build. Optimize. </h5>
+      <h1>Hello, I'm <strong id="name">Tammy Nguyen.</strong> <br> I am a full-stack developer and designer. </h1> <br>
+      <a href="#projects"><button class="git"> Learn More</button></a>
+    </section>
 
 
-  <div class="zone projects">
-    <h2>Projects</h2>
-        <div class="grid">
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+          <div class="grid">
 
-          <div class="card">
-            <img class="card-img-top" src="default.png">
-            <!-- <img class="card-img-top" src="profile.png" alt="Card image"> -->
-            <!-- <div class="pattern-checks-sm bg-blue white">...</div> -->
-            <div class="card-body">
-              <div><i class="devicon-github-original"></i>
+            <div class="card">
+              <img class="card-img-top" src="default.png">
+              <!-- <img class="card-img-top" src="profile.png" alt="Card image"> -->
+              <!-- <div class="pattern-checks-sm bg-blue white">...</div> -->
+              <div class="card-body">
+                <div><i class="devicon-github-original"></i>
                 <a href=''><i class="fas fa-laptop-code"></i></a>
+                </div>
               </div>
+              <p>HTML, CSS, JavaScript, Figma</p>
             </div>
-            <p>HTML, CSS, JavaScript, Figma</p>
-        </div>
 
-          <div class="card">
-            <!-- <p class="card-img-top">E-Commerce</p> -->
-            <img class="card-img-top" src="focus.png">
-            <div class="card-body">
-              <div><i class="devicon-github-original"></i>
-              <a href=''><i class="fas fa-laptop-code"></i></a>
+            <div class="card">
+              <!-- <p class="card-img-top">E-Commerce</p> -->
+              <img class="card-img-top" src="focus.png">
+              <div class="card-body">
+                <div><i class="devicon-github-original"></i>
+                <a href=''><i class="fas fa-laptop-code"></i></a>
+                </div>
               </div>
+              <p>React, Node, Express, MongoDB</p>
             </div>
-            <p>React, Node, Express, MongoDB</p>
+
+            <div class="card">
+              <!-- <p class="card-img-top">Face Recognition</p> -->
+              <img class="card-img-top" src="lp.png">
+              <div class="card-body">
+                <div><i class="devicon-github-original"></i>
+                <a href=''><i class="fas fa-laptop-code"></i></a>
+                </div>
+              </div>
+              <p>React, Node, Express, PostgreSQL</p>
+            </div> 
+
           </div>
+    </section>
 
-          <div class="card">
-            <!-- <p class="card-img-top">Face Recognition</p> -->
-            <img class="card-img-top" src="lp.png">
-            <div class="card-body">
-              <div><i class="devicon-github-original"></i>
-                <a href=''><i class="fas fa-laptop-code"></i></a>
-              </div>
-            </div>
-            <p>React, Node, Express, PostSQL</p>
-          </div> 
-      </div>
-  </div>
-
-      <div class="zone about">
-        <h2>Nice To Meet You</h2> <br>
-        <img class="photo" src="LinkedIn(4).jpg" alt="photo"> <br>
-        <p>
-          I am a full stack developer and designer. <br> 
-          I make powerful and attractive web apps using modern workflows. <br> 
-          I'm an eager learner, ready to solve problems and bring ideas to life. <br> 
-          I'm excited to work on excellent projects with wonderful people.
-        </p>
-      </div>
+    <section class="about" id="about">
+      <h2>Nice To Meet You</h2> <br>
+      <img class="photo" src="LinkedIn(4).jpg" alt="photo"> <br>
+      <p>
+        I am a full stack developer and designer. <br> 
+        I make powerful and attractive web apps using modern workflows. <br> 
+        I'm an eager learner, ready to solve problems and bring ideas to life. <br> 
+        I'm excited to work on excellent projects with wonderful people.
+      </p>
+    </section>
 
 
-    <div class="zone skills">
+    <section class="skills" id="skills">
       <h2>Tech Stack</h2>
       <ul>
         <li><i class="devicon-html5-plain-wordmark"></i></li>
@@ -114,20 +116,9 @@
         <li><i class="devicon-git-plain-wordmark"></i>
         </li></li>
       </ul>
-    </div>
+    </section>
 
-    <!-- <div class="zone dev">
-      <h2>Dev Tools</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Bootstrap</li>
-        <li>React</li>
-      </ul>
-    </div> -->
-
-    <div class="zone blog">
+    <section class="blog" id="blog">
       <h2>Blog</h2>
       <div class="gridb">
               <!-- <div class="cardb">
@@ -146,7 +137,7 @@
               <div class="cardb-body">
                 <!-- <h4 class="cardb-title">John Doe</h4> -->
                 <!-- <p class="cardb-text">Some example text.</p> -->
-                <i class="fab fa-medium"></i>
+                <i class="fab fa-medium"></i><p>@tammyintech</p>
                 <!-- <a href="#" class="btnb btn-danger">Read More</a> -->
               </div>
             </div>
@@ -162,25 +153,25 @@
               </div>
             </div> -->
     </div>
-  </div>
+  </section>
 
     
-    <div class="zone contact">
-      <h2>Get In Touch</h2>
-      <ul>
-        <a href=""><i class="devicon-linkedin-plain"></i></a>
-        <a href=""><i class="devicon-github-original contactgit"></i></a>
-        <a href="mailto:john@example.com"><i class="fa fa-envelope"></i></a>
-      </ul>
-      
-    </div>
+  <section class="contact" id="contact">
+    <h2>Get In Touch</h2>
+    <ul>
+      <a href=""><i class="devicon-linkedin-plain"></i></a>
+      <a href=""><i class="devicon-github-original contactgit"></i></a>
+      <a href="mailto:john@example.com"><i class="fa fa-envelope"></i></a>
+    </ul>
+  </section>
     
-    <button id="sticky"><i class="fa fa-arrow-up fa-3x"></i></button>
+  <!-- <button id="sticky"><i class="fa fa-arrow-up fa-3x"></i></button> -->
 
-    <footer class="footer">TAMMY NGUYEN</footer>
+  <footer class="footer"><p>TAMMY NGUYEN</p>></footer>
 
-    <i class="devicon-aftereffects-plain"></i>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+  <i class="devicon-aftereffects-plain"></i>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>

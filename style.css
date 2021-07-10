@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', 'Montserrat', Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -25,6 +26,24 @@ h2::after {
     display: block;
     font-size: 20rem;
     padding-bottom: 3vh;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    height: 30%;
+    width: auto;
+    background-color: snow;
+    color: rgb(255, 21, 21);
+    margin-right: auto;
+    z-index: 100;
+    font-size: 1vw;
+    list-style: none;
+    padding: 1.5vw;
 }
 
 /**********NAVBAR**********/
@@ -54,7 +73,7 @@ h2::after {
 .nav-links li > a {
     text-decoration: none;
     font-family: 'Monserrat', 'Lato';
-    font-size: 0.8vw;
+    font-size: 0.9vw;
     font-weight: 900;
     background: linear-gradient(to left, black 50%, black 50%, rgb(255, 21, 21) 20%);
     /* background: linear-gradient(to left, black 50%, mintcream 50%, rgb(148, 180, 165) 20%); */
@@ -77,9 +96,7 @@ h2::after {
     padding-top: 5rem;
 }
 
-.nav-links i {
-    font-size: 1vw;
-}
+
 
 /* .hamburger {
     display: none;
@@ -422,7 +439,7 @@ h2::after {
 }
 
 .skills li:hover {
-    transform: rotate(15deg);
+    transform: rotate(-15deg);
 }
 
 /**********BLOG**********/
@@ -454,7 +471,7 @@ h2::after {
     font-size: 45px;
     background-color: snow;
     /* border: rgb(218, 212, 212) solid 1px; */
-    box-shadow: 5px 5px 30px rgb(149, 146, 150);
+    box-shadow: 1px 3px 30px rgb(196, 196, 196);
     transition: all .5s ease-in-out;
 }
 
@@ -494,6 +511,7 @@ h2::after {
 
 /**********CONTACT**********/
 .contact {
+    height: 35vh;
     /* background-color: rgb(235, 235, 235); */
     background-color: snow;
     /* background-color: rgb(253, 243, 244); */
