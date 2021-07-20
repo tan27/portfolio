@@ -1,5 +1,6 @@
 // var sticky = document.getElementById("sticky");
 var nav = document.getElementById("navi");
+var aside = document.getElementById("aside")
 // const hamburger = document.querySelector(".hamburger");
 // const navMenu = document.querySelector(".nav-links");
 // const navLinks = document.querySelectorAll(".nav-links");
@@ -14,10 +15,12 @@ window.onscroll = function() {scrolling()};
 // bars.addEventListener('click', hamFunction);
 
 function scrolling() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
     nav.style.display = "inline";
+    aside.style.display = "block";
   } else {
     nav.style.display = "none";
+    aside.style.display = "none";
   }
 }
 

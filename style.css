@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@600&display=swap');
+
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', 'Montserrat', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Lato', Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -15,68 +17,85 @@ body {
 }
 
 h2 {
+    font-family: 'Josefin Sans';
     text-align: center;
-    padding-top: 1.5em;
-    font-weight: 900;
+    padding-top: 5rem;
+    text-transform: uppercase;
 }
 
 h2::after {
     content: "...";
     color: rgb(255, 21, 21);
     display: block;
-    font-size: 20rem;
+    font-size: 4rem;
     padding-bottom: 3vh;
 }
 
-aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 25%;
-    right: 0;
-    height: 30%;
-    width: auto;
-    background-color: snow;
-    color: rgb(255, 21, 21);
-    margin-right: auto;
-    z-index: 100;
-    font-size: 1vw;
-    list-style: none;
-    padding: 1.5vw;
+a:hover {
+    text-decoration: none;
 }
 
+/**********Aside**********/
+
+#aside {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    right: 0;
+    height: 27%;
+    width: auto;
+    background-color: rgb(255, 250, 250);
+    margin-right: auto;
+    z-index: 100;
+    padding: 0.5vw;
+    border-radius: 5px;
+}
+
+aside li {
+    list-style: none;
+    text-decoration: none;
+    padding: 1.7rem;
+}
+
+aside i {
+    font-size: 2rem;
+    /* color: rgb(148, 180, 165); */
+    /* color: black; */
+    color: rgb(255, 21, 21);
+    /* color: rgb(192, 180, 17); */
+}
+
+aside a:hover {
+    text-decoration: none;
+    color: black;
+}
 /**********NAVBAR**********/
 #navi {
     display: none;
     position: fixed;
     top: 0;
-    width: auto;
+    width: 10%;
     height: 100%;
-    /* background-color: rgb(236, 230, 230); */
     background-color: rgb(255, 250, 250);
-    /* background-color: honeydew; */
-    /* background-color:rgb(219, 231, 219); */
     text-transform: uppercase;
     z-index: 4;
     text-align: center;
+    font-family: 'Montserrat';
 }
 
 .nav-links li {
     list-style: none;
-    padding-top: 2vw;
-    padding-right: 3vw;
-    padding-left: 3vw;
-    /* padding-top: 5em; */
+    font-size: 1.7rem;
+    padding: 2rem;
 }
 
 .nav-links li > a {
     text-decoration: none;
     font-family: 'Monserrat', 'Lato';
-    font-size: 0.9vw;
     font-weight: 900;
     background: linear-gradient(to left, black 50%, black 50%, rgb(255, 21, 21) 20%);
-    /* background: linear-gradient(to left, black 50%, mintcream 50%, rgb(148, 180, 165) 20%); */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -90,20 +109,10 @@ aside {
 }
 
 .logo {
-    /* margin-right: auto;
-    margin-left: 10em; */
-    width: 30%;
+    width: 25%;
     padding-top: 5rem;
+    padding-bottom: 3rem;
 }
-
-
-
-/* .hamburger {
-    display: none;
-    color: snow;
-    transition: all 0.3s ease-in-out; 
-}
-*/
 
 @media (max-width: 1700px) {
     #navi {
@@ -150,41 +159,6 @@ aside {
         padding-top: 0;
 
     }
-
-    /* .hamburger {
-        display: block;
-        color: snow;
-        position: fixed;
-        z-index: 100;
-        right: 3rem;
-        top: 1rem
-    }
-
-    .nav-links {
-        position: absolute;
-        left: -100%;
-        top: 0rem;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-links.active {
-        left: 0;
-        z-index: 100;
-        position: absolute;
-        font-size: 0.5rem;
-        padding: 1rem;
-        overflow: hidden;
-    }
-
-    .fa-times{
-        color: snow;
-    } */
 }
 
 /**********COVER**********/
@@ -202,14 +176,12 @@ aside {
     width: 100%;
     text-align: center;
     color: snow;
-    padding-top: 60em;
+    padding-top: 15%;
 }
 
 .cover h1 {
     font-size: 2vw;
     transition: all .3s ease-in-out;
-    padding: 3%;
-    vertical-align: center;
 } 
 
 .cover h1:hover {
@@ -252,7 +224,6 @@ aside {
         border: 0.2vw solid rgb(255, 21, 21);
         background-color: transparent;
         color: rgb(255, 21, 21);
-        border-radius: 10px;
         transition: all 0.1s;
         /* position: relative; */
         font-size: 1vw;
@@ -318,69 +289,68 @@ aside {
 }
 
 .projects h2 {
-    font-size: 1.5vw;
+    font-size: 2.7rem;
+    font-family: 'Josefin Sans';
 }
 
 .grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    /* justify-items: center;
-    align-content: center; */
-    padding-left: 15vw;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-columns: repeat(3, 1fr); */
+    gap: 5px;
+    justify-items: center;
+    align-content: center;
+    padding-left: 17vw;
     padding-right: 15vw;
     padding-bottom: 3vw;
 }
 
 .card {
-    font-size: 45px;
-    border: rgb(218, 212, 212) solid 1px;
-    border: rgb(255, 21, 21) solid 1px;
-    /* box-shadow: 10px 5px 5px red; */
-    transition: all .4s ease-in-out;
+    padding: 1.5rem;
+    /* border: rgb(255, 21, 21) solid 1px;
+    transition: all .4s ease-in-out; */
+    font-size: 2rem;
+
+    box-shadow: 1px 3px 30px rgb(196, 196, 196);
+    transition: all .5s ease-in-out;
 }
 
 .card:hover {
     transform: scale(1.1);
 }
 
-.card-body {
-    font-size: 1.5vw;
-    cursor: pointer;
-    padding-top: 2vh;
-    color:rgb(255, 21, 21);
-}
-
-.fas {
-    color:rgb(255, 21, 21);
-}
-
 .card-img-top {
-    width: 15vw;
-    padding: 1vw;
-    /* background-color:rgb(219, 231, 219); */
-    /* background-color: #928f8f; */
-    /* background-color: #605B56; */
+    width: 30rem;
+    padding: 1rem;
     background-color: rgb(255, 250, 251);
-    font-size: 1vw;
-    font-weight: 900;
-    border-bottom: solid 1px rgb(255, 21, 21);
-    color: black;
+    /* border-bottom: solid 1px rgb(255, 21, 21); */
 }
 
-.card p {
-    font-size: 1vw;
-    padding-bottom: 2vh;
+.card-body {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    text-decoration: none;
+}
+
+.card-body i {
+    color:rgb(255, 21, 21);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card-body a:hover {
+    text-decoration: none;
 }
 
 /**********ABOUT ME**********/
 .about {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(244, 247, 246);
+    background-color: rgb(227, 238, 234);
 }
 
 .about h2 {
-    font-size: 1.5vw;
+    font-size: 2.7rem;
+    font-family: 'Josefin Sans';
 }
 
 .about p {
@@ -393,10 +363,15 @@ aside {
 .about .photo {
     display: block;
     margin: auto;
-    border-radius: 200px;
-    width: 10vw;
-    box-shadow: -7px 7px 7px 12px rgb(148, 180, 165);
+    border-radius: 50px;
+    width: 20rem;
+    box-shadow: -3px 5px 5px 5px rgb(148, 180, 165);
     margin-bottom: 2vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.about .photo:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 1700px) {
@@ -410,11 +385,12 @@ aside {
 .skills {
     padding-bottom: 9vh;
     /* background-color: rgb(245, 245, 236); */
-    background-color: snow;
+    background-color: rgb(243, 240, 240);
 }
 
 .skills h2 {
-    font-size: 1.5vw;
+    font-size: 2.7rem;
+    font-family: 'Josefin Sans';
 }
 
 .skills ul {
@@ -428,10 +404,8 @@ aside {
 }
 
 .skills i {
-    font-size: 35rem;
-    padding: 7rem;
-    /* padding: 30vh;
-    padding-left: 15vw; */ 
+    font-size: 10rem;
+    padding: 1.3rem;
 }
 
 .skills li {
@@ -442,85 +416,20 @@ aside {
     transform: rotate(-15deg);
 }
 
-/**********BLOG**********/
-
-.blog {
-    /* background-color: rgb(235, 235, 235); */
-    background-color: rgb(245, 245, 236);
-    background-color: rgb(237, 243, 237);
-    /* background-color: rgb(250, 242, 245); */
-
-}
-
-.blog h2 {
-    font-size: 1.5vw;
-}
-
-.gridb {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: center;
-    align-content: center;
-    gap: 1vw;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    padding-bottom: 3vw;
-}
-
-.cardb {
-    font-size: 45px;
-    background-color: snow;
-    /* border: rgb(218, 212, 212) solid 1px; */
-    box-shadow: 1px 3px 30px rgb(196, 196, 196);
-    transition: all .5s ease-in-out;
-}
-
-.cardb:hover {
-    transform: scale(1.1);
-}
-
-.cardb-img-top {
-    width: 15vw;
-    padding: 6rem;
-}
-
-.cardb-body {
-    font-size: 1.5vw;
-    cursor: pointer;
-    padding-top: 2vh;
-    text-align: center;
-    padding-bottom: 2vh;
-
-}
-
-.cardb p {
-    font-size: 1vw;
-    padding-bottom: 2vh;
-}
-
-.medium {
-    width: 2vw;
-}
-
-.btn-danger {
-    font-size: 1vw;
-    padding: 3rem;
-    text-decoration: none;
-}
-
-
 /**********CONTACT**********/
 .contact {
     height: 35vh;
     /* background-color: rgb(235, 235, 235); */
+    background-color: rgb(244, 247, 246);
+    background-color: rgb(241, 237, 238);
     background-color: snow;
-    /* background-color: rgb(253, 243, 244); */
     text-align: center;
     padding-bottom: 5vh;
 }
 
 .contact h2 {
-    font-size: 1.5vw;
+    font-size: 2.7rem;
+    font-family: 'Josefin Sans';
 }
 
 .constact ul {
@@ -535,16 +444,72 @@ aside {
 }
 
 .contact a {
-    color: rgb(255, 21, 21);
-    padding: 1.5vw;
-    font-size: 2.7vw;
+    color: black;
+    padding: 1.5rem;
+    font-size: 6rem;
     transition: all 0.5s ease;
 }
 
 .contact a:hover {
-    color: rgb(148, 180, 165);
     text-decoration: none;
+    color: rgb(255, 21, 21);
 }
+
+/**********BLOG**********/
+
+.blog {
+    background-color: snow;
+    background-color: rgb(227, 238, 234);
+}
+
+.blog h2 {
+    font-size: 2.7rem;
+    font-family: 'Josefin Sans';
+}
+
+.gridb {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-items: center;
+    align-content: center;
+    gap: 1vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3vw; */
+}
+
+.cardb {
+    font-size: 45px;
+    /* background-color: snow; */
+    background-color: transparent;
+    /* border: rgb(218, 212, 212) solid 1px; */
+    /* box-shadow: 1px 3px 30px rgb(196, 196, 196);
+    transition: all .5s ease-in-out; */
+    /* border: 1px solid red; */
+    transition: all 0.3s ease-in-out;
+    padding: 2rem;
+}
+
+.cardb:hover {
+    transform: scale(1.1);
+}
+
+/* .cardb-img-top {
+    width: 15vw;
+    padding: 6rem;
+} */
+
+.cardb-body {
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+}
+
+.cardb-body i {
+    color: black;
+}
+
 
 /**********FOOTER**********/
 
@@ -555,37 +520,3 @@ footer {
     font-size: 0.5vw;
 }
 
-/**********BACK TO TOP**********/
-
-#sticky {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 3rem; /* Place the button at the bottom of the page */
-    right: 3rem; /* Place the button 30px from the right */
-    /* z-index: 100; */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(218, 214, 218); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    border-radius: 100px; /* Rounded corners */
-    background-color:rgb(218, 214, 218);
-    width: 4rem;
-    height: 4rem;
-  
-  }
-  
-  .fa-3x {
-      color: #4568dc;
-      line-height: 1rem;
-  }
-  
-  @media screen and (max-width: 300px) {
-      #sticky {
-          bottom: 0.3rem;
-          right: 8rem;
-          width: 3rem;
-          height: 3rem;
-  
-      }
-  }
