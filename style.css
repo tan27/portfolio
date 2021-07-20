@@ -114,7 +114,7 @@ aside a:hover {
     padding-bottom: 3rem;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1000px) {
     #navi {
         display: none;
         position: fixed;
@@ -128,10 +128,11 @@ aside a:hover {
     .nav-links li {
         list-style: none;
         padding: 0;
-        margin: 1%;
+        margin-right: 1%;
         display: inline-block;
         font-size: 2vh;
         vertical-align: center;
+        padding-bottom: 1vh;
     }
     
     .nav-links li > a {
@@ -155,8 +156,8 @@ aside a:hover {
     }
     
     .logo {
-        width: 5%;
-        padding-top: 0;
+        width: 5vh;
+        padding-top: 3%;
 
     }
 }
@@ -167,6 +168,7 @@ aside a:hover {
     color: rgb(255, 21, 21);
     font-weight: 900;
     text-emphasis: bold;
+    background-color: linear-gradient(to right, pink,blue);
 }
 .cover { 
     /* background: linear-gradient(to right, #4568dc, #908291); */
@@ -295,8 +297,7 @@ aside a:hover {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 5px;
     justify-items: center;
     align-content: center;
@@ -307,10 +308,7 @@ aside a:hover {
 
 .card {
     padding: 1.5rem;
-    /* border: rgb(255, 21, 21) solid 1px;
-    transition: all .4s ease-in-out; */
     font-size: 2rem;
-
     box-shadow: 1px 3px 30px rgb(196, 196, 196);
     transition: all .5s ease-in-out;
 }
@@ -340,6 +338,12 @@ aside a:hover {
 
 .card-body a:hover {
     text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .card-img-top {
+        width: 45vw;
+    }
 }
 
 /**********ABOUT ME**********/
@@ -377,6 +381,10 @@ aside a:hover {
 @media screen and (max-width: 1700px) {
     .about .photo {
         width: 15rem;
+    }
+
+    .about p {
+        font-size: 2vh;
     }
 }
 
