@@ -13,6 +13,7 @@
 
 body {
   font-size: 46px;
+  background-color: snow;
 }
 
 h2 {
@@ -43,7 +44,7 @@ a:hover {
   align-items: center;
   top: 25%;
   right: 0;
-  height: 27%;
+  max-height: 27%;
   width: auto;
   background-color: rgb(255, 250, 250);
   margin-right: auto;
@@ -70,21 +71,32 @@ aside a:hover {
   text-decoration: none;
   color: black;
 }
+
+aside i:hover {
+  text-decoration: none;
+  color: black;
+}
 /**********NAVBAR**********/
 #navi {
   display: none;
   position: fixed;
   top: 0;
-  width: 10%;
-  height: 100%;
-  background-color: rgb(255, 250, 250);
+  width: 100%;
+  min-height: 10vh;
+  background-color:snow;
   text-transform: uppercase;
   z-index: 4;
-  text-align: center;
   font-family: "Josefin Sans";
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  box-shadow: 1px 2px 5px rgb(196, 196, 196);
 }
 
 .nav-links li {
+  display: inline;
   list-style: none;
   font-size: 1.7rem;
   padding: 2rem;
@@ -113,57 +125,51 @@ aside a:hover {
 }
 
 .logo {
-  width: 25%;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  height: 6rem;
+  margin: 2rem;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   #navi {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
     height: auto;
-    text-transform: uppercase;
-    z-index: 4;
+    text-align: center;
   }
 
   .nav-links li {
+    display: inline;
     list-style: none;
-    padding: 0;
-    margin-right: 1%;
-    display: inline-block;
-    font-size: 2vh;
-    vertical-align: center;
-    padding-bottom: 1vh;
+    font-size: 1.7rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .nav-links li > a {
+    padding: 10px;
   }
 
   .logo {
-    width: 5vh;
+    width: 9%;
+    height: auto;
     padding-top: 3%;
   }
 }
 
 /**********COVER**********/
-#name {
-  /* color:rgb(38, 38, 240); */
+/* #name {
   color: rgb(255, 21, 21);
   font-weight: 900;
   text-emphasis: bold;
-}
+} */
 
 .cover {
-  /* background: linear-gradient(to right, #4568dc, #908291); */
-  /* background-color: #252934; */
-  background-color: rgb(148, 180, 165);
-  /* background-color: snow; */
   height: 100vh;
   width: 100%;
   text-align: center;
   color: snow;
-  padding-top: 15%;
-  /* color: black; */
+  padding-top: 12%;
+  padding-bottom: 12%;
+  background-image: url("hero.png");
+  background-size: cover;
 }
 
 .cover h1 {
@@ -216,9 +222,11 @@ h5 {
   /* display: block;
         margin: 0 auto; */
   padding: 0.5em 1em;
-  border: 0.2vw solid rgb(255, 21, 21);
+  border: 0.2vw solid snow;
+  border-radius: 5px;
   background-color: transparent;
   color: rgb(255, 21, 21);
+  color: snow;
   transition: all 0.1s;
   /* position: relative; */
   font-size: 1vw;
@@ -239,21 +247,24 @@ h5 {
 .git:hover {
   transform: scale(1.1);
   border: none;
+  color: rgb(252, 180, 180);
   color: snow;
 }
 
 .git:hover::before {
   width: 100%;
+  background-color: snow;
   background-color: rgb(255, 21, 21);
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1400px) {
   .cover {
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 0rem;
     min-width: 100%;
-    max-width: 100%;
-    height: auto;
+    min-width: 100%;
+    height: 100%;
+    height: 65vh;
   }
 
   .cover h1 {
@@ -272,6 +283,14 @@ h5 {
   .git {
     border: 2px solid rgb(255, 21, 21);
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .cover {
+    height: 100vh;
+    background-image: none;
+    background-color: rgb(241, 82, 82);
   }
 }
 
@@ -342,6 +361,7 @@ h5 {
 .about {
   background-color: rgb(244, 247, 246);
   /* background-color: rgb(227, 238, 234); */
+  background-color: snow;
 }
 
 .about h2 {
@@ -361,7 +381,7 @@ h5 {
   margin: auto;
   border-radius: 50px;
   width: 20rem;
-  box-shadow: -3px 5px 5px 5px rgb(148, 180, 165);
+  box-shadow: -3px 3px 3px 3px rgb(255, 132, 132);
   margin-bottom: 2vh;
   transition: all 0.3s ease-in-out;
 }
@@ -386,6 +406,7 @@ h5 {
   padding-bottom: 9vh;
   /* background-color: rgb(245, 245, 236); */
   background-color: rgb(243, 240, 240);
+  background-color: snow;
 }
 
 .skills h2 {
@@ -399,7 +420,6 @@ h5 {
   list-style: none;
   justify-content: center;
   align-items: center;
-  padding-left: 7vw;
   padding-bottom: 4rem;
 }
 
@@ -418,21 +438,20 @@ h5 {
 
 /**********CONTACT**********/
 .contact {
-  height: 35vh;
-  /* background-color: rgb(235, 235, 235); */
-  background-color: rgb(244, 247, 246);
-  /* background-color: rgb(241, 237, 238); */
-  /* background-color: snow; */
-  /* background-color: rgba(255, 21, 21, 0.3); */
+  
+  height: 65vh;
+  background-image: url("footer.png");
+  background-size: 100%;
+  background-position-y: -30rem;
+  background-repeat: no-repeat;
   text-align: center;
-  padding-bottom: 5vh;
-  /* background-color: rgb(235, 247, 242);
-  background-color: snow; */
 }
 
 .contact h2 {
+  padding-top: 30vh;
   font-size: 2.7rem;
   font-family: "Josefin Sans";
+  padding-bottom: 5vh;
 }
 
 .constact ul {
@@ -448,17 +467,59 @@ h5 {
 
 .contact a {
   color: rgb(37, 37, 37);
-  font-size: 6rem;
-  transition: all 0.5s ease;
+  color: snow;
+  border: snow solid 2px;
+  padding: 1.2rem 1.7rem;
+  border-radius: 100px 100px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 4.5rem;
+  transition: all 0.6s ease;
   margin: 2rem;
+  margin-top: 5rem;
 }
 
 .contact a:hover {
   text-decoration: none;
-  color: rgb(255, 21, 21);
-  /* background: linear-gradient(to right, rgb(255, 21, 21), rgb(148, 180, 165));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+  color: white;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.contact p {
+  padding-top: 4vh;
+  color: snow;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    background-image: 1000%;
+    background-position: bottom;
+    background-position-y: stretch ;
+    /* background-color: rgb(241, 82, 82); */
+  }
+  .contact h2 {
+    padding-top: 13vh;
+    font-size: 2.7rem;
+    font-family: "Josefin Sans";
+    padding-bottom: 15vh;
+  }
+  .contact ul {
+    margin: 5vh;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .contact {
+    background-image: none;
+    background-color: rgb(241, 82, 82);
+    /* background-color: rgb(241, 82, 82); */
+  }
+  .contact h2 {
+    padding-top: 7vh;
+    font-size: 2.7rem;
+    font-family: "Josefin Sans";
+    padding-bottom: 3vh;
+  } 
+
 }
 
 /**********BLOG**********/
@@ -473,16 +534,16 @@ h5 {
   font-family: "Josefin Sans";
 }
 
-.gridb {
-  /* display: grid;
+/* .gridb {
+  display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     justify-items: center;
     align-content: center;
     gap: 1vw;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-bottom: 3vw; */
-}
+    padding-bottom: 3vw;
+} */
 
 .cardb {
   font-size: 45px;

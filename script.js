@@ -16,7 +16,7 @@ window.onscroll = function() {scrolling()};
 
 function scrolling() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    nav.style.display = "inline";
+    nav.style.display = "flex";
     aside.style.display = "block";
   } else {
     nav.style.display = "none";
