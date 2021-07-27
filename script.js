@@ -24,28 +24,4 @@ function scrolling() {
   }
 }
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     sticky.style.display = "block";
-//   } else {
-//     sticky.style.display = "none";
-//   }
-// }
-
-// function topFunction() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0; 
-// }
-
-// function mobileMenu() {
-//     nav = navMenu.classList.toggle("active");
-//     bars.classList.toggle('fa-bars');
-// }
-
-// function hamFunction() {
-//   bars.classList.toggle('fa-times');
-// }
-
-// function closeMenu() {
-//     navMenu.classList.remove("active");
-// }
+AOS.init();
