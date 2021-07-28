@@ -135,7 +135,7 @@ aside i:hover {
   .nav-links li {
     display: inline;
     list-style: none;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding: 2rem;
     text-align: center;
   }
@@ -297,7 +297,7 @@ h5 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 10px;
   justify-items: center;
   align-content: center;
@@ -348,6 +348,12 @@ h5 {
 @media screen and (max-width: 600px) {
   .card-img-top {
     width: 45vw;
+  }
+
+  .grid {
+    gap: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -448,28 +454,23 @@ h5 {
   color: snow;
 }
 
-.constact ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact li {
-  text-align: center;
-  list-style: none;
-  cursor: pointer;
-}
+/* .contact .ctl {
+  height: auto;
+  width: 100%;
+} */
 
 .contact a {
+  display: inline-block;
   color: rgb(37, 37, 37);
   color: snow;
   border: snow solid 2px;
-  padding: 1.5rem 1.8rem 1.2rem 1.8rem;
+  padding: 1.2rem 2rem 1rem 2rem;
   border-radius: 100px 100px;
   background: rgba(255, 255, 255, 0.1);
   font-size: 4.5rem;
   transition: all 0.6s ease;
   margin: 2rem;
-  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .contact a:hover {
@@ -488,16 +489,14 @@ h5 {
     background-image: 1000%;
     background-position: bottom;
     background-position-y: stretch ;
+    height: auto;
   }
   .contact h2 {
     padding-top: 13vh;
     font-size: 2.7rem;
     font-family: "Josefin Sans";
-    padding-bottom: 15vh;
   }
-  .contact ul {
-    margin: 5vh;
-  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -511,5 +510,4 @@ h5 {
     font-family: "Josefin Sans";
     padding-bottom: 3vh;
   } 
-
 }
