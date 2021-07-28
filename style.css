@@ -274,9 +274,9 @@ h5 {
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 675px) {
   .cover {
-    height: 100vh;
+    min-height: 60vh;
     background-image: none;
     background-color: rgb(241, 82, 82);
   }
@@ -297,8 +297,8 @@ h5 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
   justify-items: center;
   align-content: center;
   padding-bottom: 3vw;
