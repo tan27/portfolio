@@ -479,6 +479,10 @@ h5 {
   color: snow;
 }
 
+.contact h2::after {
+  color: snow;
+}
+
 @media screen and (max-width: 1200px) {
   .contact {
     background-image: 1000%;
