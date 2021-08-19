@@ -380,8 +380,8 @@ h5 {
   display: block;
   margin: auto;
   border-radius: 50px;
-  width: 20rem;
-  box-shadow: -3px 3px 3px 3px rgb(255, 132, 132);
+  width: 25rem;
+  box-shadow: -1px 2px 2px 2px rgb(238, 237, 237);
   margin-bottom: 2vh;
   transition: all 0.3s ease-in-out;
 }
