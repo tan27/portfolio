@@ -21,6 +21,7 @@ h2 {
   text-align: center;
   padding-top: 5rem;
   text-transform: uppercase;
+  padding: 5rem;
 }
 
 h2::after {
@@ -70,6 +71,17 @@ aside a:hover {
 aside i:hover {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 400px) {
+  aside li {
+    padding: 1.5rem;
+  }
+
+  aside i {
+    font-size: 2rem;
+  }
+
 }
 /******************************************NAVIGATION*************************************************************************
 ***************************************************************************************************************************/
@@ -135,7 +147,7 @@ aside i:hover {
   .nav-links li {
     display: inline;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     padding: 2rem;
     text-align: center;
   }
@@ -308,7 +320,7 @@ h5 {
 
 .card {
   padding: 3rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   box-shadow: 1px 3px 30px rgb(196, 196, 196);
   transition: all 0.5s ease-in-out;
   border-radius: 25px;
@@ -319,14 +331,13 @@ h5 {
 }
 
 .card-img-top {
-  width: 30rem;
+  width: 27rem;
   padding: 1.5rem;
   background-color: rgb(255, 250, 251);
 }
 
 .card-body {
-  font-size: 2.5rem;
-  padding-top: 1.5rem;
+  padding: 1.5rem;
   text-decoration: none;
 }
 
@@ -373,9 +384,8 @@ h5 {
 
 .about p {
   text-align: center;
-  font-size: 1.2vw;
-  padding-top: 3rem;
-  padding-bottom: 3em;
+  font-size: 2vw;
+  padding: 5rem;
 }
 
 .about .photo {
