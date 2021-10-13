@@ -335,6 +335,7 @@ h5 {
   text-decoration: none;
   cursor: pointer;
   font-size: 3rem;
+  margin: 2px;
   transition: ease-in-out all 0.3s;
 }
 
