@@ -384,8 +384,7 @@ h5 {
 
 .about p {
   text-align: center;
-  font-size: 2vw;
-  padding: 5rem;
+  font-size: 2.5vh;
 }
 
 .about .photo {
@@ -408,7 +407,8 @@ h5 {
   }
 
   .about p {
-    font-size: 2vh;
+    font-size: 3vh;
+    padding: 5rem;
   }
 }
 
