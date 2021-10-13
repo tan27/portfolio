@@ -307,10 +307,11 @@ h5 {
 }
 
 .card {
-  padding: 1.5rem;
+  padding: 5rem;
   font-size: 2rem;
   box-shadow: 1px 3px 30px rgb(196, 196, 196);
   transition: all 0.5s ease-in-out;
+  border-radius: 25px;
 }
 
 .card:hover {
@@ -319,7 +320,7 @@ h5 {
 
 .card-img-top {
   width: 30rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: rgb(255, 250, 251);
 }
 
