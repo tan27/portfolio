@@ -443,7 +443,7 @@ h5 {
   list-style: none;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 3.2rem;
 }
 
 .skills i {
@@ -453,10 +453,18 @@ h5 {
 
 .skills li {
   transition: all 0.3s ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .skills li:hover {
   transform: rotate(-15deg);
+}
+
+@media (max-width: 600px) {
+  .skills i {
+    font-size: 10rem;
+    padding: 4rem;
+  }
 }
 
 /******************************************CONTACT*************************************************************************
