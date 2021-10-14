@@ -479,7 +479,7 @@ h5 {
 }
 
 .contact h2 {
-  padding-top: 30vh;
+  padding-top: 24vh;
   font-size: 2.7rem;
   font-family: "Josefin Sans";
   padding-bottom: 2.5vh;
@@ -494,10 +494,10 @@ h5 {
   padding: 1.2rem 2rem 0.7rem 2rem;
   border-radius: 100px 100px;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 4.5rem;
+  font-size: 4rem;
   transition: all 0.6s ease;
   margin: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .contact a:hover {
@@ -523,7 +523,7 @@ h5 {
     height: auto;
   }
   .contact h2 {
-    padding-top: 13vh;
+    padding-top: 7vh;
     font-size: 2.7rem;
     font-family: "Josefin Sans";
   }
@@ -536,7 +536,7 @@ h5 {
     padding: 1rem 1.5rem 0.7rem 1.5rem;
     border-radius: 100px 100px;
     background: rgba(255, 255, 255, 0.1);
-    font-size: 2rem;
+    font-size: 2.7rem;
     transition: all 0.6s ease;
     margin: 1rem;
     margin-bottom: 3rem;
