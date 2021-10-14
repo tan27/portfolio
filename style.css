@@ -182,8 +182,7 @@ aside i:hover {
   width: 100%;
   text-align: center;
   color: snow;
-  padding-top: 12%;
-  padding-bottom: 12%;
+  padding: 12%;
   background-image: url("hero.png");
   background-size: cover;
 }
